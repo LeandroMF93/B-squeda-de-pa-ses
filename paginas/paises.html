@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <!-- Estilo -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     
@@ -17,15 +17,18 @@
       <div class="perfil">
         <div id="fecha"></div>
         <h1>Hola, CODERHOUSE </h1>
-        <li class="nav-item">
-          <a class="nav-link active link-dark" aria-current="page" href="./paginas/paises.html">Busqueda de paises</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link active link-dark" aria-current="page" href="./paginas/tareas.html">App de tareas</a>
-          </li>
     </div>
-  
+      <div class="cont-busqueda">
+        <input
+          type="text"
+          id="country-inp"
+          placeholder="Ingrese un país."
+        />
+        <button id="search-btn">Buscar</button>
+      </div>
+      <div id="result"></div>
+    </div>
     <!-- JScript -->
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>

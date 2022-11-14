@@ -57,6 +57,8 @@ searchBtn.addEventListener("click", () => {
             </div>
         </div>
       `;
+
+
     })
     .catch(() => {
       if (countryName.length == 0) {
@@ -67,6 +69,8 @@ searchBtn.addEventListener("click", () => {
     });
   
 });
+
+
 
 //creacion de fecha actualizada 
 const FECHA = new Date ()
