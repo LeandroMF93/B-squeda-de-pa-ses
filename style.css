@@ -7,6 +7,10 @@
   body {
     background-color: #3d64e6;
   }
+  #fecha {
+    color: var(--white);
+    padding: 50px 0 5px 0px;
+  }
   .container {
     background-color: #ffffff;
     width: 80vw;

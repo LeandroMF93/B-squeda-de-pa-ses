@@ -1,5 +1,6 @@
 let searchBtn = document.getElementById("search-btn");
 let countryInp = document.getElementById("country-inp");
+const fecha = document.querySelector('#fecha')
 searchBtn.addEventListener("click", () => {
   let countryName = countryInp.value;
   let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
@@ -59,10 +60,15 @@ searchBtn.addEventListener("click", () => {
     })
     .catch(() => {
       if (countryName.length == 0) {
-        result.innerHTML = `<h3>The input field cannot be empty</h3>`;
+        result.innerHTML = `<h3>El campo no puede estar vacío</h3>`;
       } else {
-        result.innerHTML = `<h3>Please enter a valid country name.</h3>`;
+        result.innerHTML = `<h3>Por favor ingrese un país válido.</h3>`;
       }
     });
   
 });
+
+//creacion de fecha actualizada 
+const FECHA = new Date ()
+fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'short', day:'numeric'})
+//UTILIZO LA FUNCION QUE USA LA FECHA DEL NAVEGADOR
